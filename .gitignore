@@ -6,9 +6,11 @@ build/
 local.properties
 
 # Log/OS Files
+.DS_Store
 *.log
 
 # Android Studio generated files and folders
+build/
 captures/
 .externalNativeBuild/
 .cxx/
@@ -32,9 +34,3 @@ google-services.json
 # Android Profiling
 *.hprof
 
-/local.properties
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx

@@ -14,9 +14,6 @@ class WeatherViewModel @Inject constructor(
     private val repository: WeatherRepository,
 ) : ViewModel() {
 
-//    val data: MutableState<WeatherData?> = mutableStateOf(null)
-//    val newResponse: MutableState<ApiResult<WeatherData>?> = mutableStateOf(null)
-
     suspend fun loadWeather(city: String): ApiResult<WeatherData?> {
         if (city.isEmpty())
             return ApiResult.Error("City name cannot be empty")

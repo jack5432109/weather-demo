@@ -17,36 +17,8 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-//                val noteViewModel: HomeViewModel by viewModels()
             WeatherApp()
         }
-
-
-//        val locationPermissionRequest = registerForActivityResult(
-//            ActivityResultContracts.RequestMultiplePermissions()
-//        ) { permissions ->
-//            when {
-//                permissions.getOrDefault(Manifest.permission.ACCESS_FINE_LOCATION, false) -> {
-//                    // Precise location access granted.
-//                    println("ACCESS_FINE_LOCATION granted")
-//                }
-//
-//                permissions.getOrDefault(Manifest.permission.ACCESS_COARSE_LOCATION, false) -> {
-//                    // Only approximate location access granted.
-//                    println("ACCESS_COARSE_LOCATION granted")
-//                }
-//
-//                else -> {
-//                    // No location access granted.
-//                    println("No location access granted")
-//                }
-//            }
-//        }
-//        locationPermissionRequest.launch(
-//            arrayOf(
-//                Manifest.permission.ACCESS_COARSE_LOCATION
-//            )
-//        )
 
     }
 }
